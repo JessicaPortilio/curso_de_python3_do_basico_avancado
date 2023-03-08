@@ -44,15 +44,16 @@ while True:
     else:
         os.system('cls')
         print('Poxa, você não acertou a palavra secreta!')
-        break
+        letras_acertadas = ''
+        numero_tentativas = 0
         
     # Essa condição compara os conjuntos das letras da palavra secreta e das letras acertadas.
     # Se eles forem iguais, significa que todas as letras da palavra secreta foram adivinhadas.
     if set(palavra_secreta) == set(letras_acertadas):
         os.system('cls')
-        print('VOCÊ GANHOU!! PARABÉNS!')
-        print('A palavra era', palavra_secreta)
-        print('Tentativas:', numero_tentativas)
-        letras_acertadas = ''
-        numero_tentativas = 0
+        print('Parabéns, você ganhou!')
+        print('A palavra secreta era', palavra_secreta)
+        print('De 10 tentativas você utirizou:', numero_tentativas)
         break
+
+        
