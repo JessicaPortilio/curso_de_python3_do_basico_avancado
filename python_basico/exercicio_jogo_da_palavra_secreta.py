@@ -14,7 +14,10 @@ na palavra secreta.
 Faça a contagem de tentativas do seu
 usuário.
 """
-palavra_secreta = 'python'
+import os
+
+
+palavra_secreta = 'banana'
 letras_acertadas = ''
 numero_tentativas = 0
 
@@ -39,10 +42,17 @@ while True:
     if numero_tentativas < 10:
         print(f'Você já tentou {numero_tentativas}x você ainda tem {10 -numero_tentativas}')
     else:
+        os.system('cls')
         print('Poxa, você não acertou a palavra secreta!')
         break
+        
     # Essa condição compara os conjuntos das letras da palavra secreta e das letras acertadas.
     # Se eles forem iguais, significa que todas as letras da palavra secreta foram adivinhadas.
     if set(palavra_secreta) == set(letras_acertadas):
-        print('Parabéns, você acertou a palavra secreta!')
+        os.system('cls')
+        print('VOCÊ GANHOU!! PARABÉNS!')
+        print('A palavra era', palavra_secreta)
+        print('Tentativas:', numero_tentativas)
+        letras_acertadas = ''
+        numero_tentativas = 0
         break
