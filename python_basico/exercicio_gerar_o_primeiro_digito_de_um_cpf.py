@@ -20,3 +20,32 @@ contrário disso:
     resultado é o valor da conta
 O primeiro dígito do CPF é 7
 """
+
+cpf = '746.824.890-70'
+novo_cpf = cpf.replace(".", "").replace("-", "")[:9]
+soma = 0
+multiplicar = 0
+
+# print(novo_cpf)
+contador = 10
+while(contador >=2):
+   for x in novo_cpf:
+    soma += int(x) * contador
+    contador -=1
+
+print(soma)
+
+multiplicar = soma * 10
+print(multiplicar)
+resto = 0
+resto = multiplicar % 11
+print(resto)
+
+if resto > 9:
+  novo_cpf += '0'
+  print(novo_cpf)
+else:
+  novo_cpf += str(resto)
+
+cpf_formatado = '{}.{}.{}-{}'.format(novo_cpf[:3], novo_cpf[3:6], novo_cpf[6:9], novo_cpf[9:]) 
+print(cpf_formatado)
