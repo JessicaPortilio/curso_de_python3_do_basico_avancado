@@ -53,4 +53,13 @@ print(f'intersecção - Itens presentes em ambos: ', s3)
 s3 = s2 - s1
 print(f'Diferença - Itens presentes apenas no set da esquerda: ', s3)
 s3 = s1 ^ s2
-print(f'diferença simétrica - Itens que não estão em ambos', s3)
+print(f'Diferença simétrica - Itens que não estão em ambos', s3)
+
+nome = {'Oi', 'Bom dia', 'Boa tarde'}
+nome2 = {'Olá', 'Bom dia', 'Boa tarde', 'Boa noite'}
+nome3= nome | nome2
+print(f'União nome | nome2 une: ', nome3)
+nome3= nome - nome2
+print(f'Diferença - Itens presentes apenas no set da esquerda: ', nome3)
+nome3= nome ^ nome2
+print(f'Diferença simétrica - Itens que não estão em ambos', nome3)
