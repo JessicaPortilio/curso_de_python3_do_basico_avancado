@@ -1,0 +1,5 @@
+Escrevendo no arquivo
+Continuando
+Escrevendo várias linhas
+Tudo no writelines
+Preste Atenção
