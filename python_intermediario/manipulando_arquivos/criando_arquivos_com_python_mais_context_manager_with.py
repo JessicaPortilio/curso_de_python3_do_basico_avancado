@@ -1,3 +1,4 @@
+import os
 # https://www.otaviomiranda.com.br/2020/normalizacao-unicode-em-python/
 # Criando arquivos com Python + Context Manager with
 # Usamos a função open para abrir
@@ -64,3 +65,9 @@ print('#' * 20)
 # abrindo o arquivo, lendo e fechando (with abre e fecha o arquivo)
 # with open(caminho_arquivo, 'r') as arquivo:
 #    print(arquivo.read()) # read() ler o que tem dentro do arquivo
+
+# Apagando o arquivo criado
+# os.remove(caminho_arquivo)
+
+# Renomear o nome do arquivo ou mover para outro lugar
+# os.rename(caminho_arquivo, 'aula116-2.txt')
