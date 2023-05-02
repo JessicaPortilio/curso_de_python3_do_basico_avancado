@@ -9,9 +9,9 @@ Conta (ABC)
     ContaPoupanca
 
 
-Pessoa (ABC)
+Pessoa
     Cliente
-        Clente -> Conta
+        Clente -> Conta (um para um ou um para muitos)
 
 
 Banco
@@ -37,24 +37,3 @@ Banco será responsável autenticar o cliente e as contas da seguinte maneira:
 Só será possível sacar se passar na autenticação do banco (descrita acima)
 Banco autentica por um método.
 """
-
-from abc import ABC, abstractmethod
-
-
-class Pessoa(ABC):
-    def __init__(self, nome, idade):
-        self.nome = nome
-        self.idade = idade
-
-    def get_nome(self):
-        return self.nome
-    
-    def get_idade(self):
-        return self.idade
-    
-class Conta(ABC):
-    def __init__(self, numero, saldo):
-        ...
-
-class Cliente(Pessoa):
-    ...
