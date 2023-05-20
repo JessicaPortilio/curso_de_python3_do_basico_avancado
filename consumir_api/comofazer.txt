@@ -1,0 +1,12 @@
+https://github.com/luizomf/simple_api_rest_sqlite
+
+é só colocar em um local no seu computador
+
+Abre o caminho da pasta no cmd
+F:\simple_api_rest_sqlite
+
+
+aí é só da o comando 
+npm run dev
+
+e pronto agora é só consumir
