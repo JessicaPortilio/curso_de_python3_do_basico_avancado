@@ -1,0 +1,13 @@
+pip install pyinstaller   # Primeiro instalar o pyistaller 
+
+python -c 'import pathlib; print(pathlib.Path().absolute())'; #Descubra seu caminho
+# Esse é o meu caminho
+python pyside6_interface_grafica_com_qt6_no_python_gui_para_desktop\\calculadora\\main.py
+
+#Só fazer isso
+pyinstaller --name="Calculadora" --noconfirm --noconsole --onefile 
+--add-data='../pyside6_interface_grafica_com_qt6_no_python_gui_para_desktop/calculadora/files/;files/'  --clean --log-level=WARN --distpath="pastasaida/dist" --workpath="pastasaida/build" --specpath="pastasaida/" pyside6_interface_grafica_com_qt6_no_python_gui_para_desktop/calculadora/main.py
+
+#Esse seria para colocar o icono se fosse png
+pyinstaller --name="Calculadora" --noconfirm --noconsole --onefile 
+--add-data='../pyside6_interface_grafica_com_qt6_no_python_gui_para_desktop/calculadora/files/;files/' --icon='../files/icon.jpg' --clean --log-level=WARN --distpath="pastasaida/dist" --workpath="pastasaida/build" --specpath="pastasaida/" pyside6_interface_grafica_com_qt6_no_python_gui_para_desktop/calculadora/main.py
