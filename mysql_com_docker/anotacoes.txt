@@ -1,0 +1,26 @@
+entra no diretório da pasta
+cd mysql_com_docker
+e dentro do diretório da pasta 
+temos que criar um arquivo chamado docker-compose.yml
+agora no terminal que já está dentro do diretório cd mysql_com_docker
+digite o comando
+docker-compose up
+
+# obs up vai subir o servidor, mas ele vai te mostrar tudo que está acontecendo aqui
+
+ctrl + c parar o container
+
+# para ver quais container estão rodando
+docker ps
+
+# para ver os container existentes
+docker ps -a
+
+# eu subo o servidor e libero o terminal
+docker-compose up -d
+
+# você para o seu container
+docker-compose stop 3f9
+
+# você iniciar o seu container
+docker container start 3f9
